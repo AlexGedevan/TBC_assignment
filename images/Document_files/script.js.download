@@ -1,0 +1,73 @@
+const header = document.querySelector(".header");
+const slider1 = document.querySelector(".slider1");
+const slider2 = document.querySelector(".slider2");
+const slider3 = document.querySelector(".slider3");
+const prevSlideBtn = document.querySelector(".previous-slide-btn");
+const nextSlideBtn = document.querySelector(".next-slide-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 0) {
+    header.classList.add("less-opacity");
+  } else {
+    header.classList.remove("less-opacity");
+  }
+});
+
+let val = 0;
+
+let sliderInterval = setInterval(() => {
+  let active = val % 3;
+  let next = (val + 1) % 3;
+
+  document.querySelector(`.slider${active}`).classList.toggle("hidden");
+  document.querySelector(`.slider${next}`).classList.toggle("hidden");
+  val++;
+}, 2000);
+
+prevSlideBtn.addEventListener("mouseenter", () => {
+  clearInterval(sliderInterval);
+});
+
+nextSlideBtn.addEventListener("mouseenter", () => {
+  clearInterval(sliderInterval);
+});
+
+prevSlideBtn.addEventListener("mouseleave", () => {
+  sliderInterval = setInterval(() => {
+    let active = val % 3;
+    let next = (val + 1) % 3;
+
+    document.querySelector(`.slider${active}`).classList.toggle("hidden");
+    document.querySelector(`.slider${next}`).classList.toggle("hidden");
+    val++;
+  }, 2000);
+});
+
+nextSlideBtn.addEventListener("mouseleave", () => {
+  sliderInterval = setInterval(() => {
+    let active = val % 3;
+    let next = (val + 1) % 3;
+
+    document.querySelector(`.slider${active}`).classList.toggle("hidden");
+    document.querySelector(`.slider${next}`).classList.toggle("hidden");
+    val++;
+  }, 2000);
+});
+
+prevSlideBtn.addEventListener("click", () => {
+  let active = val % 3;
+  let next = (val + 1) % 3;
+
+  document.querySelector(`.slider${active}`).classList.toggle("hidden");
+  document.querySelector(`.slider${next}`).classList.toggle("hidden");
+  val++;
+});
+
+nextSlideBtn.addEventListener("click", () => {
+  let active = val % 3;
+  let next = (val + 1) % 3;
+
+  document.querySelector(`.slider${active}`).classList.toggle("hidden");
+  document.querySelector(`.slider${next}`).classList.toggle("hidden");
+  val++;
+});

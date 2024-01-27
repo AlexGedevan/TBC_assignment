@@ -1,0 +1,267 @@
+/* here 1rem = 1em = 16px */
+
+/* below 1312px (smaller laptops) */
+
+@media (max-width: 70rem) {
+  .FAQ {
+    position: relative;
+  }
+  .FAQ-title a {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .courses {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 58em) {
+  .header {
+    justify-content: space-between;
+  }
+  .header-nav {
+    background-color: rgb(26, 30, 31);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    transition: all 0.5s;
+    transform: translateX(100%);
+  }
+
+  .nav-open {
+    transform: translateX(0);
+  }
+
+  .next-slide-btn {
+    right: 5%;
+    top: 115%;
+  }
+  .previous-slide-btn {
+    left: 5%;
+    top: 115%;
+  }
+
+  .nav-list {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .hero-title {
+    margin-left: 4rem;
+  }
+
+  .header-logo {
+    transform: scale(0.8);
+  }
+
+  .main-description {
+    padding: 3.2rem 4.4rem;
+  }
+  .main-description a {
+    font-size: 2.8rem;
+  }
+  .description {
+    font-size: 2.8rem;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .slider {
+    padding: 0;
+  }
+  .slider-content {
+    gap: 8rem;
+    padding: 6.4rem 4.8rem;
+  }
+
+  .FAQ {
+    padding: 3rem 6rem;
+  }
+  .FAQ-title {
+    font-size: 2.2rem;
+  }
+  .question {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    padding: 3rem 6rem;
+  }
+  .footer-btn {
+    padding: 0.4rem 2rem;
+  }
+  .footer-logos img {
+    height: 6rem;
+  }
+  .footer-right {
+    gap: 3.2rem;
+  }
+  .courses {
+    gap: 4rem;
+  }
+  .course {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .courses-div {
+    padding: 2.2rem 4rem;
+  }
+  .courses-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .hero-title {
+    font-size: 3.6rem;
+    width: 25rem;
+    margin-left: 1rem;
+    font-size: 2.6rem;
+  }
+
+  .header-nav {
+    gap: 2rem;
+  }
+  .main-description {
+    padding: 2rem 4.4rem;
+  }
+  .description {
+    font-size: 2.2rem;
+  }
+
+  .main-description a {
+    font-size: 2rem;
+  }
+  .courses {
+    grid-template-columns: 1fr;
+  }
+  .courses-title {
+    font-size: 2.6rem;
+  }
+  .course {
+    width: 75%;
+    justify-self: center;
+  }
+
+  .slider-content {
+    padding: 3rem 5.2rem;
+    gap: 6.2rem;
+  }
+  .section-slider {
+    height: 33rem;
+  }
+  .slider-content p {
+    font-size: 2.6rem;
+  }
+  .slider-partners {
+    flex-direction: column;
+    gap: 24px;
+    top: 120%;
+  }
+  .slider-partners img {
+    width: 40%;
+  }
+  .slider-btn-div {
+    margin-top: 1.2rem;
+  }
+  .next-slide-btn {
+    right: 3%;
+    top: 14rem;
+  }
+  .previous-slide-btn {
+    left: 3%;
+    top: 14rem;
+  }
+  .footer-logos img {
+    height: 4rem;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .footer-right {
+    align-items: start;
+  }
+  .course {
+    justify-content: start;
+  }
+  .course-info {
+    gap: 1rem;
+  }
+  .course {
+    height: auto;
+  }
+  .course a {
+    margin-bottom: 1rem;
+  }
+
+  .section-footer {
+    display: none;
+  }
+  .section-footer-responsive {
+    display: block;
+    background-color: #191e1e;
+  }
+  .footer-responsive {
+    max-width: 160rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 2.4rem;
+  }
+  .footer-responsive-middle {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-responsive img {
+    width: 10.8rem;
+  }
+  .footer-responsive-middle button {
+    font-size: 2rem;
+  }
+
+  .footer-responsive-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .footer-responsive-bottom p,
+  .footer-responsive-bottom a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-responsive-logos {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  .footer-responsive-logos img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 25em) {
+  .slider-content p {
+    font-size: 1.8rem;
+  }
+  .slider-content {
+    padding: 3rem 2rem;
+  }
+}

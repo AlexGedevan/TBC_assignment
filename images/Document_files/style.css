@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Helper classes */
+
+.less-opacity {
+  opacity: 0.8;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.padding-sm {
+  padding: 12px 24px;
+}
+
+.spacer {
+  height: 100px;
+  width: 100%;
+  background-color: #343a40;
+}
+/* end of helper classes */
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #212529;
+  height: 100px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.header-nav {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  display: flex;
+  gap: 48px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.header-nav a:hover {
+  color: #228be6;
+}
+
+/* Main */
+
+.main-start {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("/images/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.webp");
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: 120px;
+}
+
+.main-description {
+  padding: 64px 128px;
+  background-color: #343a40;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-description a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #228be6;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  transition: all 0.5s;
+}
+
+.main-description a:hover {
+  color: #adb5bd;
+}
+
+.description {
+  font-size: 38px;
+  color: white;
+}
+
+/* Courses */
+
+.courses-div {
+  background-color: rgb(22, 22, 22);
+  padding: 64px 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.courses-title {
+  color: white;
+  font-size: 32px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 24px;
+}
+
+.course {
+  border: 1px solid rgba(128, 128, 128, 0.419);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 360px;
+  height: 500px;
+  color: white;
+  font-size: 24px;
+}
+
+.course-img {
+  width: 100%;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.registration {
+  font-size: 18px;
+}
+
+.course a {
+  color: #228be6;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.course a:hover {
+  color: #1971c2;
+}
+
+/* Partnes slider */
+
+.slider {
+  height: 320px;
+  background-color: #343a40;
+}
+
+.slider-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 64px 128px;
+}
+
+.slider-content p {
+  font-size: 34px;
+  color: white;
+}
+
+.slider-partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider-partners img {
+  width: 330px;
+}
+
+.previous-slide-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 50px;
+  border: none;
+  background-color: #343a40;
+  color: white;
+}
+
+.next-slide-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  width: 50px;
+  border: none;
+  background-color: #343a40;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
