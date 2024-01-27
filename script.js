@@ -120,12 +120,7 @@ question3.addEventListener("click", () => {
   arrowUp2.classList.add("hidden");
 });
 
-// btn1.addEventListener("click", () => {
-//   clearInterval(slider);
-//   slider1.classList.remove("hidden");
-//   slider2.classList.add("hidden");
-//   slider3.classList.add("hidden");
-// });
+
 
 navButton.addEventListener("click", () => {
   mobileNav.classList.toggle("nav-open");

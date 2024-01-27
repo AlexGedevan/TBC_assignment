@@ -211,7 +211,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
-  /* max-width: 36rem; */
   width: 90%;
   height: 50rem;
   color: white;
