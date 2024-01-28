@@ -1,7 +1,5 @@
 /* here 1rem = 1em = 16px */
 
-/* below 1312px (smaller laptops) */
-
 @media (max-width: 70rem) {
   .FAQ {
     position: relative;
@@ -60,6 +58,7 @@
   }
   .hero-title {
     margin-left: 4rem;
+    font-size: 4rem;
   }
 
   .header-logo {
@@ -75,9 +74,7 @@
   .description {
     font-size: 2.8rem;
   }
-  .hero-title {
-    font-size: 4rem;
-  }
+
   .slider {
     padding: 0;
   }
@@ -154,13 +151,16 @@
     width: 75%;
     justify-self: center;
   }
+  .course {
+    justify-content: start;
+  }
 
+  .section-slider {
+    height: 33rem;
+  }
   .slider-content {
     padding: 3rem 5.2rem;
     gap: 6.2rem;
-  }
-  .section-slider {
-    height: 33rem;
   }
   .slider-content p {
     font-size: 2.6rem;
@@ -193,9 +193,6 @@
   }
   .footer-right {
     align-items: start;
-  }
-  .course {
-    justify-content: start;
   }
   .course-info {
     gap: 1rem;

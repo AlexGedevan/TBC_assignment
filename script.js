@@ -1,7 +1,5 @@
 const header = document.querySelector(".header");
-const slider1 = document.querySelector(".slider1");
-const slider2 = document.querySelector(".slider2");
-const slider3 = document.querySelector(".slider3");
+
 const prevSlideBtn = document.querySelector(".previous-slide-btn");
 const nextSlideBtn = document.querySelector(".next-slide-btn");
 const answer1 = document.querySelector(".answer1");
@@ -21,13 +19,12 @@ const navButton = document.querySelector(".btn-mobile-nav");
 const mobileNav = document.querySelector(".header-nav");
 const openNavBtn = document.querySelector(".open-nav");
 const closeNavBtn = document.querySelector(".close-nav");
-const arrowDown2 = document.querySelector("#down-arrow2");
-const arrowUp2 = document.querySelector("#up-arrow2");
 const arrowDown1 = document.querySelector("#down-arrow1");
 const arrowUp1 = document.querySelector("#up-arrow1");
+const arrowDown2 = document.querySelector("#down-arrow2");
+const arrowUp2 = document.querySelector("#up-arrow2");
 const arrowDown3 = document.querySelector("#down-arrow3");
 const arrowUp3 = document.querySelector("#up-arrow3");
-console.log(prevSlideBtn, nextSlideBtn);
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 0) {
@@ -119,8 +116,6 @@ question3.addEventListener("click", () => {
   arrowDown2.classList.remove("hidden");
   arrowUp2.classList.add("hidden");
 });
-
-
 
 navButton.addEventListener("click", () => {
   mobileNav.classList.toggle("nav-open");

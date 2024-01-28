@@ -230,13 +230,6 @@ html {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.registration {
-  font-size: 1.8rem;
-}
-
-.course a {
   color: #228be6;
   text-decoration: none;
   transition: all 0.3s;
@@ -244,6 +237,9 @@ html {
 
 .course a:hover {
   color: #1971c2;
+}
+.registration {
+  font-size: 1.8rem;
 }
 
 /* Partnes slider */
@@ -260,9 +256,6 @@ html {
 }
 
 .slider-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
   padding: 6.4rem 12.8rem;
 }
 
@@ -331,6 +324,8 @@ html {
 .hidden {
   display: none !important;
 }
+
+/* Frequently asked questions section */
 
 .FAQ-section {
   background-color: #212529;
@@ -406,6 +401,8 @@ html {
   font-size: 2rem;
   padding: 2rem 0;
 }
+
+/* footer section */
 
 .section-footer {
   background-color: #191e1e;
