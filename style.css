@@ -146,7 +146,7 @@ html {
   letter-spacing: -0.5px;
 }
 .section-description {
-  background-color: #343a40;
+  background-color: rgb(43, 43, 43);
 }
 
 .main-description {
@@ -270,6 +270,7 @@ html {
   align-items: center;
   height: 100px;
   left: 50%;
+
   transform: translateX(-50%);
   transition: all 0.5s;
   gap: 48px;
